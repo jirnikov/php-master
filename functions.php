@@ -8,7 +8,7 @@ include_once("config.php");
 
 function connectDB ($sql) {
 
-    $db = mysqli_connect(HOST_NAME, DB_NAME, DB_PASS, DB_NAME);
+    $db = mysqli_connect(HOST_NAME, DB_USER, DB_PASS, DB_NAME);
     if ($db == false){
         exit("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
 
